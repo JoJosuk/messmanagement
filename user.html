@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/user.css')}}">
+    <link rel="stylesheet" href="user.css">
     <title>User</title>
 </head>
 <body>
+    <div class="centring">
+    <div class="contentig">
     <header>
         Admission No:
         <h1>{{adm_no}}</h1>
@@ -18,14 +20,20 @@
         <section>
             <form action="{{url_for('user')}}" method="post">
                 <input type="date" name="calendar" id="" min="2023-01-01" max="2023-01-30" required >
-                
-                <label for="cut">CUT</label>
-                <input type="radio" name="cut" id="cut" value="cut">
-                <label for="cut">EAT</label>
-                <input type="radio" name="cut" id="cut" value="eat">
-                
-                <input type="submit" value="Add mess cut">
-                <h4 style="color: greenyellow;">{{cut_status}}</h4>
+                <div>
+                    <div class="rb">
+                        <div class="rb1">
+                            <label for="cut">CUT</label>
+                            <input type="radio" name="cut" id="cut" value="cut">
+                        </div>
+                        <div class="rb2">
+                            <label for="cut">EAT</label>
+                            <input type="radio" name="cut" id="cut" value="eat">
+                        </div>
+                    </div>
+                    <div><input type="submit" value="Add mess cut"></div>
+                    <h4 style="color: greenyellow;">{{cut_status}}</h4>
+                </div>
             </form>
         </section>
         <br>
@@ -35,5 +43,7 @@
             {% endfor %}
         </section>
     </main>
+    </div>
+    </div>
 </body>
 </html>

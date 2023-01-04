@@ -1,0 +1,82 @@
+body{
+    background-image: linear-gradient(135deg,#1da1f2,#981ceb);
+    height: 100vh;
+}
+.centring{
+    display: flex;
+    justify-content: center;
+}
+.contentig{
+    width: 500px;
+    border-radius: 25px;
+    height: 600px;
+    border: 10px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+h1{
+    color: #aacadf;
+}
+header{
+    font-family: sans-serif;
+    font-weight: bold;
+    opacity: 0.9;
+    background-color: rgb(228, 231, 243);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 15px;
+}
+input[type="date"]{
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 17px;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 25px;
+
+}
+input[type="submit"]{
+    width: 90%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color:rgb(228, 231, 243);
+    margin-top: 15px;
+    opacity: 0.9;
+}
+.rb{
+    display: flex;
+    justify-content: center;
+}
+.rb1{
+    width:50%;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: rgb(228, 231, 243);
+    padding: 10px;
+    margin:5px;
+    border-style:solid;
+    margin-left: 20px;
+
+}
+.rb2{
+    width:50%;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: rgb(228, 231, 243);
+    padding: 10px;
+    margin: 5px;
+    border-style: solid;
+    margin-right: 20px;
+
+}
+label{
+    margin-left: 75px;
+}
